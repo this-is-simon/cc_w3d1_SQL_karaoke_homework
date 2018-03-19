@@ -44,7 +44,7 @@ INSERT INTO guests (name, wallet, room_id, song_id_fave_song) VALUES ('Ewa', 25,
 
 INSERT INTO room_songs (room_id, song_id) VALUES (1, 2);
 INSERT INTO room_songs (room_id, song_id) VALUES (1, 3);
-INSERT INTO room_songs (room_id, song_id) VALUES (1, 2);
+INSERT INTO room_songs (room_id, song_id) VALUES (1, 1);
 INSERT INTO room_songs (room_id, song_id) VALUES (2, 1);
 INSERT INTO room_songs (room_id, song_id) VALUES (2, 3);
 INSERT INTO room_songs (room_id, song_id) VALUES (2, 2);
@@ -52,10 +52,6 @@ INSERT INTO room_songs (room_id, song_id) VALUES (2, 2);
 UPDATE songs
 SET (song_title, song_artist) = ('Whole Lotta Love', 'ACDC')
 WHERE id = 1;
-
-UPDATE room_songs
-SET room_id = 3
-WHERE song_id = 2;
 
 SELECT * FROM guests;
 SELECT * FROM songs ORDER BY id;
