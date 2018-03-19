@@ -58,9 +58,9 @@ SET room_id = 3
 WHERE song_id = 2;
 
 SELECT * FROM guests;
-SELECT * FROM songs;
+SELECT * FROM songs ORDER BY id;
 SELECT * FROM rooms;
-SELECT * FROM room_songs;
+SELECT * FROM room_songs ORDER BY room_id;
 
 SELECT * FROM room_songs WHERE room_id = 1;
 SELECT * FROM guests WHERE wallet >= 25
